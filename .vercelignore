@@ -1,0 +1,51 @@
+# Ignore backend and database files for frontend deployment
+backend/
+alembic/
+nginx.conf
+docker-compose.yml
+Dockerfile
+
+# Ignore node_modules at root
+node_modules/
+
+# Ignore documentation files
+*.md
+CAMERA_*.md
+DOCKER_*.md
+EXECUTIVE_*.md
+FILE_*.md
+GETTING_*.md
+PHASE_*.md
+TECH_*.md
+USER_*.md
+
+# Ignore environment files
+.env
+.env.local
+.env.*.local
+
+# Ignore git and version control
+.git
+.gitignore
+
+# Ignore IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore test files
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Ignore logs
+*.log
+logs/
+
+# Keep only necessary frontend files
+!phase3_application/frontend/

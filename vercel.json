@@ -1,0 +1,30 @@
+{
+  "buildCommand": "cd phase3_application/frontend && npm install && npm run build",
+  "outputDirectory": "phase3_application/frontend/dist",
+  "env": {
+    "VITE_API_URL": "@vite_api_url",
+    "VITE_APP_NAME": "Vital Lens AI",
+    "VITE_APP_VERSION": "3.0.0",
+    "VITE_DEBUG": "false",
+    "VITE_ENABLE_CAMERA": "true",
+    "VITE_ENABLE_2FA": "true",
+    "VITE_ENABLE_DATA_EXPORT": "true",
+    "VITE_ENABLE_HEALTH_INSIGHTS": "true",
+    "VITE_ENABLE_OFFLINE_MODE": "false",
+    "VITE_CAMERA_FPS": "30",
+    "VITE_CAMERA_WIDTH": "1280",
+    "VITE_CAMERA_HEIGHT": "720",
+    "VITE_MIN_FACE_DETECTION_CONFIDENCE": "0.5",
+    "VITE_MIN_MEASUREMENT_DURATION_SECONDS": "30",
+    "VITE_MAX_MEASUREMENT_DURATION_SECONDS": "120",
+    "VITE_THEME": "light",
+    "VITE_LANGUAGE": "en",
+    "VITE_TIMEZONE": "UTC"
+  },
+  "redirects": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://your-backend-url.com/api/:path*"
+    }
+  ]
+}
